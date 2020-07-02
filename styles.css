@@ -1,0 +1,18 @@
+body, html {
+    font-family: 'Roboto';font-size: 22px;
+    background: url(https://i.pinimg.com/originals/5f/69/85/5f69851ce884994f00eb2aed8e5fe471.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+.bg-text {
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0, 0.6);
+}

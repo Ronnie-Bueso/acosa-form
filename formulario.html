@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
+    <link rel="canonical" href="https://mdbootstrap.com/docs/jquery/components/demo/">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container shadow bg-white mt-3 pt-3 text-center bg-text">
+        <form>
+            <div class="titulo">
+                <span class="tituloPrincipal">
+                    <h1>Solicitud de Empleo</h1>
+                </span>
+                <br />
+                <span class="tituloSecundario">
+                    <small>Se parte de nuestro equipo.</small>
+                </span>
+            </div>
+            <hr />
+            <div class="form-group shadow-sm mt-1 pt-3 mb-1 pb-1">
+                <h5>Informacion General</h5>
+                <div class="col-md-12 mb-12">
+                    <div class="md-form form-sm">
+                        <input type="text" id="nombreCompleto" class="form-control form-control-sm">
+                        <label for="form2" class="">Nombre Completo: </label>
+                    </div>
+                    <div class="md-form form-sm">
+                        <input type="date" class="form-control form-control-sm">
+                        <label for="form2" class="">Fecha de Nacimiento: </label>
+                    </div>
+                    <div class="md-form form-sm">
+                        <select class="select-dropdown form-control" id="exampleFormControlSelect1">
+                            <option>Estado Civil</option>
+                            <option>Soltero(a)</option>
+                            <option>Casado(a)</option>
+                            <option>Viudo(a)</option>
+                        </select>
+                    </div>
+                    <div class="md-form form-sm">
+                        <select class="form-control form-control-sm" id="exampleFormControlSelect1">
+                            <option>Genero</option>
+                            <option>Femenino</option>
+                            <option>Masculino</option>
+                        </select>
+                    </div>
+                    <div class="md-form form-sm">
+                        <select class="form-control form-control-sm" id="exampleFormControlSelect1">
+                            <option>Ciudad</option>
+                            <option>Tegucigalpa</option>
+                            <option>San Pedro Sula</option>
+                        </select>
+                    </div>
+                    <div class="md-form form-sm">
+                        <input type="text" class="form-control form-control-sm">
+                        <label for="form2" class="">Direccion: </label>
+                    </div>
+                    <div class="md-form form-sm">
+                        <select class="form-control form-control-sm" id="exampleFormControlSelect1">
+                            <option>Puesto</option>
+                            <option>Informatica</option>
+                            <option>RRHH</option>
+                        </select>
+                    </div>
+                    <div class="md-form form-sm">
+                        <input type="number" class="form-control form-control-sm" min="1" step="any" >
+                        <label for="form2" class="">Aspiracion Salarial: </label>
+                    </div>
+                    <div class="md-form form-sm">
+                        <input type="tel" class="form-control form-control-sm" placeholder="9999-0000"  pattern="[0-9]{4}-[0-9]{4}">
+                        <label for="form2" class="">Telefono: </label>
+                    </div>
+                    <div class="md-form form-sm">
+                        <input type="email" class="form-control form-control-sm">
+                        <label for="form2" class="">Correo Eletronico: </label>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group shadow-sm mt-1 pt-3 mb-1 pb-1">
+                <h5>Formacion Academica</h5>
+                <div class="col-md-12 mb-12">
+                    <div class="md-form form-sm">
+                        <input type="text" id="gradoAcademico" class="form-control form-control-sm">
+                        <label for="form2" class="">Grado Academico: </label>
+                    </div>
+                    <div class="md-form form-sm">
+                        <input type="text" id="gradoAcademico" class="form-control form-control-sm">
+                        <label for="form2" class="">Titulo Obtenido: </label>
+                    </div>
+                    <div class="md-form form-sm">
+                        <input type="text" id="gradoAcademico" class="form-control form-control-sm">
+                        <label for="form2" class="">Centro de Estudio: </label>
+                    </div>
+                    <div class="md-form form-sm">
+                        <select class="form-control form-control-sm" id="exampleFormControlSelect1">
+                            <option>Grado Academico</option>
+                            <option>Basico</option>
+                            <option>Medio</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group shadow-sm mt-1 pt-3 mb-1 pb-1">
+                <h5>Ultima Experiencia Laboral</h5>
+                <div class="col-md-12 mb-12">
+                    <div class="md-form form-sm">
+                        <input type="text" id="gradoAcademico" class="form-control form-control-sm">
+                        <label for="form2" class="">Mencione la ultima empresa donde laboro: </label>
+                    </div>
+                    <div class="md-form form-sm">
+                        <input type="text" id="gradoAcademico" class="form-control form-control-sm">
+                        <label for="form2" class="">Puesto desempeñado: </label>
+                    </div>
+                    <div class="md-form form-sm">
+                        <input type="text" id="gradoAcademico" class="form-control form-control-sm">
+                        <label for="form2" class="">Funciones realizadas: </label>
+                    </div>
+                    <div class="md-form form-sm">
+                        <input type="text" id="gradoAcademico" class="form-control form-control-sm">
+                        <label for="form2" class="">Tiempo de desarollar dichas funciones: </label>
+                    </div>
+                    <div class="md-form form-sm">
+                        <input type="text" id="gradoAcademico" class="form-control form-control-sm">
+                        <label for="form2" class="">Motivo de salida: </label>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group mt-2 pt-3 mb-2 pb-2">
+                <h5>Adjunte su curriculum:</h5>
+                <div class="md-form d-flex justify-content-center">
+                    <div class="file-field">
+                        <div class="btn btn-warning waves-effect waves-light">
+                            <span>Elegir Archivo: </span>
+                            <input type="file">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group mt-1 pt-3 mb-1 pb-1 text d-flex justify-content-end">
+                <button type="submit" class="btn btn-primary waves-effect waves-light">Enviar</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
