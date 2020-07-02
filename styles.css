@@ -23,3 +23,6 @@ body, html {
     background-color: #a3def8 !important;    
 ]
 
+.padding-important{
+    padding:0 !important;    
+}
