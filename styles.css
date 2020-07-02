@@ -1,6 +1,6 @@
 body, html {
     font-family: 'Roboto';font-size: 22px;
-    background: url(https://blog.hubspot.es/hubfs/ThinkstockPhotos-477199312.jpg) no-repeat center center fixed; 
+    background: url(./img/background.jpg) no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
