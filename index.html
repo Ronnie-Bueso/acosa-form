@@ -90,37 +90,47 @@
                         </select>
                     </div>
                      <div class="md-form form-sm">
-                        <select class="form-control form-control-sm noBorder" id="area" nombre="area" required>
+                        <select class="form-control form-control-sm noBorder" id="ciudad" nombre="ciudad" required>
                             <option>Ciudad donde desea aplicar:</option>
-                            <option value="tgu" codigo="01">Tegucigalpa</option>
-                            <option value="sps" codigo="02">San Pedro Sula</option>
-                            <option value="cholu" codigo="03">Choluteca</option>
-                            <option value="cholo" codigo="04">Choloma</option>
-                            <option value="ceiba" codigo="05">Ceiba</option>
-                            <option value="prog" codigo="06">Progreso</option>
+                            <option value="tgu" ciudad="01">Tegucigalpa</option>
+                            <option value="sps" ciudad="02">San Pedro Sula</option>
+                            <option value="cholu" ciudad="03">Choluteca</option>
+                            <option value="cholo" ciudad="04">Choloma</option>
+                            <option value="ceiba" ciudad="05">Ceiba</option>
+                            <option value="prog" ciudad="06">Progreso</option>
+                        </select>
+                    </div>
+                    <div class="md-form form-sm">
+                        <select class="form-control form-control-sm noBorder" id="areas" nombre="areas" required>
+                            <option value="">Area a la que aplica:</option>
+                            <option value="cont" ciudad="01" >Contabilidad</option>
+                            <option value="rrhh" ciudad="01">Recursos Humanos</option>
+                            <option value="licit" ciudad="01">Licitaciones</option>
+                            <option value="audit" ciudad="01">Auditoria</option>
+                            <option value="ventmay" ciudad="01">Ventas mayoreo</option>
+                            <option value="ventacorp" ciudad="01">Ventas coorporativo</option>
+                            <option value="tienda" ciudad="01">Tienda</option>
+                            <option value="promot" ciudad="01">Promotoria</option>
+                            <option value="depTecnico" ciudad="01">Departamento tecnico</option>
+                            <option value="cont" ciudad="02"> SPS Contabilidad</option>
+                            <option value="rrhh" ciudad="02"> SPS Recursos Humanos</option>
+                            <option value="licit" ciudad="02"> SPS Licitaciones</option>
+                            <option value="audit" ciudad="02">SPS Auditoria</option>
+                            <option value="ventmay" ciudad="02"> SPS Ventas mayoreo</option>
+                            <option value="ventacorp" ciudad="02"> SPS Ventas coorporativo</option>
+                            <option value="tienda" ciudad="02"> SPS Tienda</option>
+                            <option value="promot" ciudad="02"> SPS Promotoria</option>
+                            <option value="depTecnico" ciudad="02"> SPS Departamento tecnico</option>
                         </select>
                     </div>
                     <div class="md-form form-sm">
                         <select class="form-control form-control-sm noBorder" id="puestos" nombre="puestos" required>
-                            <option value="">Puesto al que aplica:</option>
-                            <option value="cont" codigo="01">Contabilidad</option>
-                            <option value="rrhh" codigo="01">Recursos Humanos</option>
-                            <option value="licit" codigo="01">Licitaciones</option>
-                            <option value="audit" codigo="01">Auditoria</option>
-                            <option value="ventmay" codigo="01">Ventas mayoreo</option>
-                            <option value="ventacorp" codigo="01">Ventas coorporativo</option>
-                            <option value="tienda" codigo="01">Tienda</option>
-                            <option value="promot" codigo="01">Promotoria</option>
-                            <option value="depTecnico" codigo="01">Departamento tecnico</option>
-                            <option value="cont" codigo="02"> SPS Contabilidad</option>
-                            <option value="rrhh" codigo="02"> SPS Recursos Humanos</option>
-                            <option value="licit" codigo="02"> SPS Licitaciones</option>
-                            <option value="audit" codigo="02">SPS Auditoria</option>
-                            <option value="ventmay" codigo="02"> SPS Ventas mayoreo</option>
-                            <option value="ventacorp" codigo="02"> SPS Ventas coorporativo</option>
-                            <option value="tienda" codigo="02"> SPS Tienda</option>
-                            <option value="promot" codigo="02"> SPS Promotoria</option>
-                            <option value="depTecnico" codigo="02"> SPS Departamento tecnico</option>
+                            <option value="">Puesto a la que aplica:</option>
+                            <option value="jfeCont" areas="01">Jefe de contabilidad</option>
+                            <option value="auxCont" areas="01">Auxiliar creditos y cobros</option>
+                            <option value="gestCont" areas="01">Gestor de cobros</option>
+                            <option value="asisRRHH" areas="02">Asistente de Recursos Humanos</option>
+                            <option value="recep" areas="02">Recepcionista</option>
                         </select>
                     </div>
                     <div class="md-form form-sm">
@@ -217,28 +227,6 @@
             </div>
         </form>
     </div>
-      <script>
-        var id1 = document.getElementById("area");
-        var id2 = document.getElementById("puestos");
-        
-        if (id1.addEventListener) {    
-            id1.addEventListener("change", cambiar);
-        } else if (id1.attachEvent) { 
-            id1.attachEvent("change", cambiar); 
-        }
-
-        function cambiar() {
-            for (var i = 0; i < id2.options.length; i++)
-            
-            if(id2.options[i].getAttribute("codigo") == id1.options[id1.selectedIndex].getAttribute("codigo")){
-                id2.options[i].style.display = "block";
-            }else{
-                id2.options[i].style.display = "none";
-            }        
-            id2.value = "";
-        }
-
-        cambiar();
-    </script>
+    <script src="./script/script.js"></script>
 </body>
 </html>
