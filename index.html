@@ -19,13 +19,12 @@
     <div class="container shadow mt-3 pt-3 text-center bg-text">
         <form>
             <div class="titulo text-white">
-                <img src="./img/logo.png" class="mt-2" alt="Acosa" width="200" height="200">
+                <img src="./img/logo.png" class="mt-2" alt="Acosa" width="150" height="150">
                 <span class="tituloPrincipal">
-                    <h1>Solicitud de Empleo</h1>
+                    <h2>Solicitud de Empleo</h2>
                 </span>
-                <br />
                 <span class="tituloSecundario">
-                    <small>Se parte de nuestro equipo.</small>
+                    <small> .</small>
                 </span>
             </div>
             <hr />
@@ -91,17 +90,26 @@
                     </div>
                       <div class="md-form form-sm">
                         <select class="form-control form-control-sm noBorder" id="ciudad" nombre="ciudad" required>
+                             <!-- 
+                                Aqui debe ejecutarse una peticion a base de datos donde esten almacenandose las ciudades donde acosa tiene tiendas,
+                                seria adecuado generar un modulo de administracion de ciudades, areas laborales por ciudad y puestos por areas. 
+                                
+                                Este modulo seria importante para que las personas de RRHH tengan una mejor administracion y control sobre las solicitudes de empleo
+                                que llegan a su pagina web.
+                             -->
                             <option>Ciudad donde desea aplicar:</option>
                             <option value="tgu" ciudad="01">Tegucigalpa</option>
                             <option value="sps" ciudad="02">San Pedro Sula</option>
-                            <option value="cholu" ciudad="03">Choluteca</option>
-                            <option value="cholo" ciudad="04">Choloma</option>
-                            <option value="ceiba" ciudad="05">Ceiba</option>
-                            <option value="prog" ciudad="06">Progreso</option>
                         </select>
                     </div>
                     <div class="md-form form-sm">
                         <select class="form-control form-control-sm noBorder" id="area" nombre="area" required>
+                            <!-- 
+                                Solicitud a base de datos con ciclo para mostrarse en el select y tener un mejor orden en el codigo, posiblemente hay que generar tablas de contenido
+                                para guardar la informacion.
+
+                                Esta demostracion solo muestra como se veria el resultado si estuviese recopilando data de un backend.
+                            -->
                             <option value="">Area a la que aplica:</option>
                             <option value="cont" ciudad="01" area="01">Contabilidad</option>
                             <option value="rrhh" ciudad="01" area="02">Recursos Humanos</option>
@@ -123,9 +131,9 @@
                             <option value="depTecnico" ciudad="02"> SPS Departamento tecnico</option>
                         </select>
                     </div>
-
                     <div class="md-form form-sm">
                         <select class="form-control form-control-sm noBorder" id="puesto" nombre="puesto" required>
+                            <!-- El personal de RRHH cuenta con listas de puestos, ubicacion de tiendas y mucha mas informacion para elaboracion de los posibles modulos -->
                             <option value="">Puesto a la que aplica:</option>
                             <option value="jfeCont" area="01">Jefe de contabilidad</option>
                             <option value="auxCont" area="01">Auxiliar creditos y cobros</option>
