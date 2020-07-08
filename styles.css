@@ -31,3 +31,7 @@ body, html {
     font-size: large;
     color: #757575;
 }
+
+.btn-warning{
+    background-color: #ec851a;
+}
