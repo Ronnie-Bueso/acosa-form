@@ -1,4 +1,4 @@
-        var id1 = document.getElementById("ciudad");
+     var id1 = document.getElementById("ciudad");
         var id2 = document.getElementById("area");
         
         if (id1.addEventListener) {    
@@ -9,7 +9,7 @@
 
         function cambiar() {
             for (var i = 0; i < id2.options.length; i++)
-            if(id2.options[i].getAttribute("codigo") == id1.options[id1.selectedIndex].getAttribute("codigo")){
+            if(id2.options[i].getAttribute("ciudad") == id1.options[id1.selectedIndex].getAttribute("ciudad")){
                 id2.options[i].style.display = "block";
             }else{
                 id2.options[i].style.display = "none";
@@ -20,18 +20,18 @@
         cambiar();
 
         var id3 = document.getElementById("area");
-        var id4 = document.getElementById("puestos");
+        var id4 = document.getElementById("puesto");
         
         if (id3.addEventListener) {    
-            id3.addEventListener("change", cambiar);
+            id3.addEventListener("change", cambiar2);
         } else if (id3.attachEvent) { 
-            id3.attachEvent("change", cambiar); 
+            id3.attachEvent("change", cambiar2); 
         }
 
-        function cambiar() {
+        function cambiar2() {
             for (var i = 0; i < id4.options.length; i++)
             
-            if(id4.options[i].getAttribute("codigo") == id3.options[id3.selectedIndex].getAttribute("codigo")){
+            if(id4.options[i].getAttribute("area") == id3.options[id3.selectedIndex].getAttribute("area")){
                 id4.options[i].style.display = "block";
             }else{
                 id4.options[i].style.display = "none";
@@ -39,6 +39,5 @@
             id4.value = "";
         }
 
-        cambiar();
-
+        cambiar2();
         
